@@ -67,3 +67,82 @@
 
 </body>
 </html>
+<style>roster-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 200px;
+    box-shadow: 0 0 20px black;
+
+}
+
+.roster-table th{
+    background-color: red;
+    color: rgb(0, 0, 0);
+    text-align: left;
+    font-weight: bold;
+}
+
+.roster-table th, .roster-table td {
+    padding: 12px 15px 
+}
+
+.roster-table tbody tr {
+    border-bottom: 1px solid ;
+}
+
+.roster-table tbody tr:nth-of-type(even) {
+    background-color: rgb(114, 111, 111) ;
+}
+
+.roster-ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    counter-reset: apples;
+    }
+
+.roster-li:before {
+    content: counter(apples);
+    counter-increment: apples;
+    font-family: sans-serif;
+    color: red;
+    font-weight: bold;
+    margin-right: 10px;
+    background-color: black;
+}
+
+.roster-li {
+    border: 1px solid;
+}
+
+.peeps-ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    counter-reset: apples;
+    }
+
+.peeps-li:before {
+    content: counter(apples);
+    counter-increment: apples;
+    font-family: initial;
+    color: gray
+    font-weight: i;
+    margin-right: 10px;
+    background-color: red
+}
+
+.peeps-li{
+    border-style: ridge;
+}
+body{
+    background-color: rgb(168, 162, 162);
+}
+
+let x = 10;
+if (x>5)  {
+    console.log("x is greater than 5");
+} else  {
+    console.log("x is greater than 5");
+}</style>
